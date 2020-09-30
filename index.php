@@ -17,13 +17,13 @@
         var x = document.forms["snm"]["regno"].value;
         var y = document.forms["snm"]["nisn"].value;
         if (x.length !== 10) {
-            setTimeout(function () { swal("Invalid!","Nomor Pendaftaran harus berjumlah 10","error")}, 1000);
-            //alert("Nomor Pendaftaran harus berjumlah 10!");
+            setTimeout(function () { swal("Invalid!","Nomor Pendaftaran harus berjumlah 10 digit","error")}, 1000);
+            //alert("Nomor Pendaftaran harus berjumlah 10 digit!");
             return false;
         }
         if (y.length !== 10) {
-            setTimeout(function () { swal("Invalid!","NISN harus berjumlah 10","error")}, 1000);
-            //alert("NISN harus berjumlah 10!");
+            setTimeout(function () { swal("Invalid!","NISN harus berjumlah 10 digit","error")}, 1000);
+            //alert("NISN harus berjumlah 10 digit!");
             return false;
         }
     }
@@ -55,21 +55,21 @@
         <div class="navbar navbar-default navbar-static-top">
             <div class="container" style="padding-top: 10px;">
                 <div class="navbar-header">
-                    <span class="h2"><a class="snmptn" href="http://www.snmptn.ac.id/">SNMPTN 2019</a> FAKE GENERATOR </span>
+                    <span class="h2"><a class="snmptn" href="http://www.snmptn.ac.id/">SNMPTN 2019</a> FAKE GENERATOR SNMPTN </span>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="well">
                 <fieldset>
-                    <legend>Masukkan Data</legend>
+                    <legend>Masukkan Data Anda</legend>
                     <div class="form-group">
                         <form name="snm" method="POST" onsubmit="return validateForm()" action="generate.php">
 
                         <label>No. Pendaftaran</label>
                         <input type="number" class="form-control input-md input-regno" id="regno" name="regno" value ="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="-- 1234567890 --" maxlength="10" size="10" autocomplete="off" required="">
                         <!--input type="text" class="form-control input-md input-regno" id="regno" name="regno" value="" placeholder="Ex: 8180454470" autocomplete="off" required="" /-->
-                        <p class="help-block info">No. pendaftaran SNMPTN: 10 digit, tertera pada kartu peserta SNMPTN.<br>Gak punya kartu SNMPTN? isi asal aja gan, selow ntar disensor aja nmr nya :v</p>
+                        <p class="help-block info">No. pendaftaran SNMPTN: 10 digit, tertera pada kartu peserta SNMPTN.<br>Gak punya kartu SNMPTN? isi asal aja sob gapapa, selow nanti bisa disensor nomor nya :v</p>
 
                         <label>Nama Siswa</label>
                         <input type="text" class="form-control input-md input-nama" id="nama" name="nama" value="" placeholder="-- Muhammad Fatah --" style="text-transform:uppercase" autocomplete="off" required="" /><br>
